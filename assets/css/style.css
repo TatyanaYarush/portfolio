@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+   
+   
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: rgb(232, 241, 248);
+  }
+  
+  header {
+    padding: 30px;
+    text-align: center;
+    background-image: url("images/image\ background\ 2.jpg");
+    color: rgb(19, 16, 26);
+    display: flex;
+    
+  }
+  
+  h1 {
+      order: 2;
+      padding: 85px 0;
+      margin: 0 50px;
+      
+  }
+  
+  
+  nav {
+    display: flex;
+    background-color: #dbcdc2;
+  }
+  
+  ul li {
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align:right
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  aside {
+    padding: 30px;
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    font-size: large;
+  }
+  
+  #About Me {
+    order: 2;
+    padding: 10px 0;
+   
+  }
+  
+  p {
+    text-align: left;
+  }
+  
+  
+  .clm {
+    height: 50px;
+    width: 20%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  a {
+    color: #080349;
+    text-decoration: none;
+  }
+  
+  
+  div.row {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    float: right;
+    font-size: 25px;
+    
+  
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 15px;
+    order: 4;
+    position: relative;
+    
+  }
+  
+  .card img {
+    height: 300px;
+    border: 3px solid rgb(31, 28, 28);
+    box-shadow: 5px 5px 5px  #4056b9;
+    float: left
+  }
+  
+  
+  .card:hover {
+    background-color: #f0cbc6;
+    color: rgb(155, 10, 39);
+  }
+  
+  .card:active {
+    font-size: 130%;
+    box-shadow: 0 0 10px rgb(235, 19, 19) inset;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    @media screen and (max-width: 992px) {
+    .card {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    header {
+        background: #d4aea9;
+      }
+      nav,
+      footer {
+    background-color: #ee555d;
+    flex: 0 0 50%;
+    max-width: 50%;
+      }
+      aside {
+        text-align: center;
+      }
+    }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+    header {
+        background: #707bad;
+      }
+      nav,
+      footer {
+    background-color: #beccd4;
+    flex: 0 0 75%;
+    max-width: 75%;
+      }
+      aside {
+        width: 100%;
+        text-align: center;
+      }
+    }  
