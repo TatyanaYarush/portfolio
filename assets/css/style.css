@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-   
-   
   }
   
   body {
@@ -20,28 +18,12 @@
     background-image: url("images/image\ background\ 2.jpg");
     color: rgb(19, 16, 26);
     display: flex;
-    
   }
   
   h1 {
       order: 2;
       padding: 85px 0;
-      margin: 0 50px;
-      
-  }
-  
-  
-  nav {
-    display: flex;
-    background-color: #dbcdc2;
-  }
-  
-  ul li {
-    display: inline;
-    padding: 20px;
-    font-size: 20px;
-    text-decoration: none;
-    text-align:right
+      margin: 0 50px;  
   }
   
   main {
@@ -49,7 +31,27 @@
     flex-wrap: wrap;
     flex-grow: 1;
   }
+
+  nav,
+  footer {
+    height: 50px;
+    background-color: #dbcdc2;
+  }
+
+  ul li {
+    display: inline;
+    padding: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align:right;
+    line-height:1;
+  }
   
+  footer{
+    line-height: 60px;
+    text-align: center;
+  }
+
   aside {
     padding: 30px;
     margin: 50px;
@@ -57,11 +59,26 @@
     display: flex;
     font-size: large;
   }
+
+  a {
+    color: #080349;
+    text-decoration: none;
+  }
+  
+
+  div.row {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    float: right;
+    font-size: 25px;
+    position: relative;
+    left: 245;
+  }
   
   #About Me {
     order: 2;
     padding: 10px 0;
-   
   }
   
   p {
@@ -77,42 +94,32 @@
     background-position: center;
   }
   
-  a {
-    color: #080349;
-    text-decoration: none;
-  }
-  
-  
-  div.row {
-    display:flex;
-    flex-wrap: wrap;
-    padding: 5px 0;
-    float: right;
-    font-size: 25px;
-    
-  
-  }
+ 
+
   .card {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 43%;
     padding: 15px;
     order: 4;
-    position: relative;
-    
+    position: relative; 
+  }
+
+  .background {
+      background-image: url("./images/image background 3.png");
   }
   
   .card img {
-    height: 300px;
+    height: 250px;
     border: 3px solid rgb(31, 28, 28);
     box-shadow: 5px 5px 5px  #4056b9;
     float: left
   }
   
-  
   .card:hover {
     background-color: #f0cbc6;
     color: rgb(155, 10, 39);
+    
   }
   
   .card:active {
@@ -125,42 +132,67 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
     
-    @media screen and (max-width: 992px) {
+@media screen and (max-width: 928px) {
     .card {
-      flex: 0 0 50%;
-      max-width: 50%;
+        flex: 0 0 25%;
+        
+      }
+    ul li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+      header {
+          background: #d4aea9;
+          justify-content: center;
+        }
+        nav {
+      background-color: #ee555d;
+      height:  200px;
+     
+      max-width: 100%;
+        }
+        aside {
+          text-align: center;
+        }
+      }
+    
+
+ @media screen and (max-width: 768px) {
+    .card {
+      flex: 0 0 75%;
+      
     }
     header {
         background: #d4aea9;
-      }
-      nav,
-      footer {
-    background-color: #ee555d;
-    flex: 0 0 50%;
-    max-width: 50%;
-      }
-      aside {
-        text-align: center;
-      }
+    }
+    nav {
+      background-color: #ee555d;
+      
+      max-width: 100%;
+    }
+    aside {
+      text-align: center;
+    }
     }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     .card {
-      flex: 0 0 75%;
-      max-width: 75%;
+      flex: 0 0 100%;
+     
     }
     header {
         background: #707bad;
       }
-      nav,
-      footer {
+      nav {
     background-color: #beccd4;
-    flex: 0 0 75%;
-    max-width: 75%;
+    flex: 0 0 100%;
+    max-width: 100%;
       }
       aside {
         width: 100%;
         text-align: center;
       }
-    }  
+  }
