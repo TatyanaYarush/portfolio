@@ -1,5 +1,7 @@
 # portfolio
 
+[My Portfolio - check it out](https://tatyanayarush.github.io/portfolio/)
+
 ![page portfolio](https://user-images.githubusercontent.com/70031550/109836111-d8e35f00-7c11-11eb-9fa4-37b6b22e96c4.JPG)
 
 # 02 Advanced CSS: Portfolio
