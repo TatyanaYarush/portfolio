@@ -1,198 +1,252 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-    background-color: rgb(232, 241, 248);
-  }
-  
-  header {
-    padding: 30px;
-    text-align: center;
-    background-image: url("images/image\ background\ 2.jpg");
-    color: rgb(19, 16, 26);
-    display: flex;
-  }
-  
-  h1 {
-      order: 2;
-      padding: 85px 0;
-      margin: 0 50px;  
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  }
+  box-sizing: border-box;
+}
 
-  nav,
-  footer {
-    height: 50px;
-    background-color: #dbcdc2;
-  }
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-color: rgb(232, 241, 248);
+}
 
-  ul li {
-    display: inline;
-    padding: 50px;
-    font-size: 20px;
-    text-decoration: none;
-    text-align:right;
-    line-height:1;
-  }
-  
-  footer{
-    line-height: 60px;
-    text-align: center;
-  }
+header {
+  padding: 30px;
+  text-align: center;
+  background-image: url("images/image\ background\ 2.jpg");
+  color: rgb(19, 16, 26);
+  display: flex;
+}
 
-  aside {
-    padding: 30px;
-    margin: 50px;
-    text-align: center;
-    display: flex;
-    font-size: large;
-  }
-
-  a {
-    color: #080349;
-    text-decoration: none;
-  }
-  
-
-  div.row {
-    display:flex;
-    flex-wrap: wrap;
-    padding: 5px 0;
-    float: right;
-    font-size: 25px;
-    position: relative;
-    left: 245;
-  }
-  
-  #About Me {
+h1 {
     order: 2;
-    padding: 10px 0;
-  }
-  
-  p {
-    text-align: left;
-  }
-  
-  
-  .clm {
-    height: 50px;
-    width: 20%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
-  }
-  
+    padding: 85px 0;
+    margin: 0 50px;  
+    text-shadow: 4px 4px 6px;
+    color:#4b5063;
+}
+
+/* .Photo {  if posable to do with image?
+  text-shadow: 4px 4px 6px;
+    color:#4b5063;
+} */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+nav {
+
+  height: 50px;
+  padding: 15px;
+  background-color: #dbcdc2;
+}
+
+ul li {
+  display: inline;
+  padding: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align:right;
+  line-height:1;
+
+}
+
+ul li i {
+  margin: 10px;
+  padding: 15px;
+  /* border-radius: 15px;
+  text-shadow:#4056b9; */
  
+}
 
+/* ul li i fa fa-file  { how to move it
+  margin-left: 500px;
+ 
+} */
+aside {
+  padding: 30px;
+  margin: 50px;
+  text-align: center;
+  display: flex;
+  font-size: large;
+}
+
+a {
+  color: #080349;
+  text-decoration: none;
+}
+
+/*move to right side ????*/
+div.row {
+  display:flex;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  /* float: right; */
+  font-size: 25px;
+  position: relative;
+}
+
+#About Me {
+  order: 2;
+  padding: 10px 0;
+}
+
+p {
+  text-align: left;
+}
+
+.clm {
+  height: 50px;
+  width: 20%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+.list-width {
+ width: 100%;
+
+}
+
+.list-resume {
+ margin-left: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width:auto;
+  padding: 15px;
+  order: 6;
+  position: relative; 
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px #3a3838;
+}
+
+#general.card {
+  background-image: url("images/image\ background\ 1.png"); 
+  font-size: 25px;
+  position: relative;
+  bottom: 60px;
+  left: 70px;
+  text-align: center;
+} 
+
+/* .background {
+    background-image: url("./images/image background 3.png");
+} */
+
+.card img {
+  height: 250px;
+  border: 3px solid rgb(31, 28, 28);
+  box-shadow: 5px 5px 5px  #4056b9;
+  float: left;
+  color: #272323;
+}
+
+.card:hover {
+  background-color: #f8f6ed;
+  color: rgb(155, 10, 39);
+}
+
+/* .card:active {
+  font-size: 130%;
+  box-shadow: 0 0 10px rgb(235, 19, 19) inset;
+}  */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.span.card-title {
+  color: #272323;
+  /* font-weight: bold; */
+ }
+ 
+ .card .card-image .card-title {
+   color: rgb(20, 20, 20);
+   font-weight: bold;
+   bottom: 70px;
+   margin-left: 25px;
+   text-align: center;
+ }
+
+footer{
+  line-height: 60px;
+  text-align: center;
+  background-color: #dbcdc2;
+}
+  
+/* @media screen and (max-width: 928px) {
   .card {
-    display: flex;
-    flex-direction: column;
-    width: 43%;
-    padding: 15px;
-    order: 4;
-    position: relative; 
-  }
-
-  .background {
-      background-image: url("./images/image background 3.png");
-  }
-  
-  .card img {
-    height: 250px;
-    border: 3px solid rgb(31, 28, 28);
-    box-shadow: 5px 5px 5px  #4056b9;
-    float: left
-  }
-  
-  .card:hover {
-    background-color: #f0cbc6;
-    color: rgb(155, 10, 39);
-    
-  }
-  
-  .card:active {
-    font-size: 130%;
-    box-shadow: 0 0 10px rgb(235, 19, 19) inset;
-  }
-  
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-    
-@media screen and (max-width: 928px) {
-    .card {
-        flex: 0 0 25%;
-        
-      }
-    ul li {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
-      header {
-          background: #d4aea9;
-          justify-content: center;
-        }
-        nav {
-      background-color: #ee555d;
-      height:  200px;
-     
-      max-width: 100%;
-        }
-        aside {
-          text-align: center;
-        }
-      }
-    
-
- @media screen and (max-width: 768px) {
-    .card {
-      flex: 0 0 75%;
+      flex: 0 0 25%;
       
     }
-    header {
-        background: #696464;
-    }
-    nav {
-      background-color: #a0759e;
-      
-      max-width: 100%;
-    }
-    aside {
+  ul li {
+      display: block;
       text-align: center;
-    }
-    }
-  
-  @media screen and (max-width: 500px) {
-    .card {
-      flex: 0 0 100%;
-     
-    }
+      padding: 10px;
+  }
     header {
-        background: #707bad;
+        background: #d4aea9;
+        justify-content: center;
       }
       nav {
-    background-color: #beccd4;
-    flex: 0 0 100%;
+    background-color: #ee555d;
+    height:  200px;
+   
     max-width: 100%;
       }
       aside {
-        width: 100%;
         text-align: center;
       }
+    }
+  
+/* 
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 75%;
+    
   }
+  header {
+      background: #696464;
+  }
+  nav {
+    background-color: #a0759e;
+    
+    max-width: 100%;
+  }
+  aside {
+    text-align: center;
+  }
+  }
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex: 0 0 100%;
+   
+  }
+  header {
+      background: #707bad;
+    }
+    nav {
+  background-color: #beccd4;
+  flex: 0 0 100%;
+  max-width: 100%;
+    }
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+/* } */
+
+
