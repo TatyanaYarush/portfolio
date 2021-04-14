@@ -5,6 +5,14 @@
     <title>Portfolio Tatyana Yarushin</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css" media="screen,projection" />
+    <!--fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
@@ -23,83 +31,270 @@
     </nav>
 
     <main>
-        <aside>
-            <h2>About Me</h2>
-            <div class="clm"></div>
-
-            <div class="about me-area" id="about me"></div>
-            <div class="content">
-                <p>I am a skilled Software Quality Assurance Analyst with over 10 years work experience. I have a
-                    Diploma in Industrial Engineering and my ISTQB Certification.</p>
-                <p>I like to describe myself as a savvy tester who develops creative test cases and innovative test
-                    methodologies as Agile and Waterfall.</p>
-                <p> I use different test management tools and defect trackers such as Jira, Testlink, Joget and Quality
-                    Center. </p>
-                <p> My professional experience has demonstrated strong understanding of QA Principles and Software
-                    Development Life Cycle.</p>
-                <p> I am great at install software programs. I am excellent at organise my day schedule for effectively
-                    work. I make decision during work for improving software testing.</p>
-                <p> I want to be a web developer because it's interesting field to me. Today we are living in
-                    competitive World and web development is the fastest-growing sector of Software development.</p>
-                <p> It has the best career path with rapid growth and a handsome salary package, providing high job
-                    security and luxury of life.I like new technologies, traveling, hiking, swimming, photography.</p>
+        <!--about me-->
+        <aside class="row">
+            <div class="col s3">
+                <h2>About Me</h2>
+            </div>
+            <div class="col s12">
+                <div class="about me-area" id="about me"></div>
+                <div class="content">
+                    <p>I am a skilled Software Quality Assurance Analyst with over 10 years work experience. I have a
+                        Diploma in Industrial Engineering and my ISTQB Certification.</p>
+                    <p>I like to describe myself as a savvy tester who develops creative test cases and innovative test
+                        methodologies as Agile and Waterfall.</p>
+                    <p> I use different test management tools and defect trackers such as Jira, Testlink, Joget and
+                        Quality
+                        Center. </p>
+                    <p> My professional experience has demonstrated strong understanding of QA Principles and Software
+                        Development Life Cycle.</p>
+                    <p> I am great at install software programs. I am excellent at organise my day schedule for
+                        effectively
+                        work. I make decision during work for improving software testing.</p>
+                    <p> I want to be a web developer because it's interesting field to me. Today we are living in
+                        competitive World and web development is the fastest-growing sector of Software development.</p>
+                    <p> It has the best career path with rapid growth and a handsome salary package, providing high job
+                        security and luxury of life.I like new technologies, traveling, hiking, swimming, photography.
+                    </p>
+                </div>
             </div>
         </aside>
 
-        <aside>
-            <h2>Work</h2>
-            <div class="work-area" id="work"></div>
-            <div class="row">
-                <div class="card">
-                    <img class="img" src="./assets/css/images/image background 1.png" alt="background">
-                    <div class="centered">Prework-about-me <p>HTML</p>
+        <!--my projects-->
+        <aside class="row">
+            <div class="col s3">
+                <h2>Work</h2>
+            </div>
+            <!-- <div class="clm"></div> -->
+            <!--Card 1-->
+            <div class="col s12">
+                <div class="content row" id="work">
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/css/images/image background 1.png">
+                                <span class="card-title">Work Day Scheduler</span>
+                            </div>
+                            <div class="card-content">
+                                <p>HTML</p>
+                                <hr>
+                                <p>CSS</p>
+                                <hr>
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://tatyanayarush.github.io/work-day-scheduler/" target="_blank">View
+                                    Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div class="col s4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/css/images/image background 3.jpg">
+                                <span class="card-title">Password Generator</span>
+                            </div>
+                            <div class="card-content">
+                                <p>HTML</p>
+                                <hr>
+                                <p>CSS</p>
+                                <hr>
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://tatyanayarush.github.io/password-generator/" target="_blank">View
+                                    Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                    <div class="col s4 ">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/css/images/image background 4.png">
+                                <span class="card-title">Code Quiz</span>
+                            </div>
+                            <div class="card-content">
+                                <p>HTML</p>
+                                <hr>
+                                <p>CSS</p>
+                                <hr>
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://tatyanayarush.github.io/code-quiz/" target="_blank">View
+                                    Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 4-->
+                    <div class="col s4 ">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/css/images/image background 5.jpg">
+                                <span class="card-title">Weather Dashboard</span>
+                            </div>
+                            <div class="card-content">
+                                <p>HTML</p>
+                                <hr>
+                                <p>CSS</p>
+                                <hr>
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://tatyanayarush.github.io/weather-dashboard/" target="_blank">View
+                                    Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 5-->
+                    <div class="col s4 ">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/css/images/image background 4.png">
+                                <span class="card-title">Further project</span>
+                            </div>
+                            <div class="card-content">
+                                <p>HTML</p>
+                                <hr>
+                                <p>CSS</p>
+                                <hr>
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="" target="_blank">View
+                                    Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 6-->
+                    <div class="col s4 ">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/css/images/image background 1.png">
+                                <span class="card-title">Further project</span>
+                                <!--how to add one more title??? // reduce size//??????-->
+                            </div>
+                            <div class="card-content">
+                                <p>HTML</p>
+                                <hr>
+                                <p>CSS</p>
+                                <hr>
+                                <p>Javascript</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="" target="_blank">View Site
+                                </a>
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-
-                <div class="card">
-                    <img src="./assets/css/images/image background 3.jpg" alt="background">
-                    <div class="centered">Code-refactor <p>HTML_CSS</p>
+            </div>
+        </aside>
+        <!--Card 7-->
+        <div class="row">
+            <div class="col s12 m10">
+                <div class="card" id="general">
+                    <div class="card-content">
+                        <span class="card-title">Team Projects</span>
+                        <p>1. SkewedNews: The application provides links to the three different news sources as well as
+                            various categories. </p>
+                        <hr>
+                        <p>2. Further steps
+                        </p>
+                        <hr>
+                        <p>3. Further steps
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://weird-but-doable.github.io/SkewedNews/" target="_blank">View Project 1</a>
+                        <a href="" target="_blank">View Project 2</a>
+                        <a href="" target="_blank">View Project 3</a>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="card">
-                    <img src="./assets/css/images/image background 4.png" alt="background">
-                    <div class="centered">Password Generator<p>JavaScript</p>
-                    </div>
+        <!--Contact Me-->
+        <aside class="row list-width">
+            <div class="col s3">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="col s12">
+                <div class="contact me-area" id="contact me"> </div>
+                <div class="content1-row">
+                    <ul>
+                        <a href="tel:2049790023" target="_blank">
+                            <li>
+                                204.979.0023
+                                <i class="fa fa-phone"></i>
+                            </li>
+                        </a>
+
+                        <a href="mailto:tatyana.yarushin@gmail.com" target="_blank">
+                            <li>
+                                tatyana.yarushin@gmail.com
+                                <i class="fa fa-envelope"></i>
+                            </li>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/tatyana-yarushin-287a96123/" target="_blank">
+                            <li>
+                                Linkedin
+                                <i class="fa fa-linkedin-square"></i>
+                            </li>
+                        </a>
+
+                        <a href="https://github.com/TatyanaYarush" target="_blank">
+                            <li>
+                                GitHub
+                                <i class="fa fa-github"></i>
+                            </li>
+                        </a>
+                    </ul>
                 </div>
+            </div>
+        </aside>
 
-                <div class="card">
-                    <img src="./assets/css/images/image background 5.jpg" alt="background">
-                    <div class="centered">Databases<p>MySQL</p>
-                    </div>
+        <!--Resume-->
+        <aside class="row list-width">
+            <div class="col s3">
+                <h2>Resume</h2>
+            </div>
+            <div class="col s12">
+                <div class="resume-area" id="resume"></div>
+                <div class="content1-row">
+                    <ul>
+
+                        <a href="./assets/css/images/Junior Software Developer_Tatyana Yarushin.pdf" target="_blank">
+                            <li>
+                                Open a PDF file
+                                <i class="fa fa-file"></i>
+                            </li>
+                        </a>
+                    </ul>
                 </div>
             </div>
         </aside>
     </main>
 
-    <aside>
-        <div class="contact me-area" id="contact me"></div>
-        <h2>Contact Me</h2>
+    <!-- <footer class="page-footer black"> -->
 
-        <ul>
-            <li>204.979.0023</li>
-            <li>tatyana.yarushin@gmail.com</li>
-            <li>Linkedin</li>
-            <li>GitHub</li>
-        </ul>
-    </aside>
-
-    <aside>
-        <div class="resume-area" id="resume"></div>
-        <h2>Resume</h2>
-        <ul>
-            <li>Further steps</li>
-        </ul>
-    </aside>
-    <footer class="text-center">
-        © 2021 My New Website Portfolio
+    <footer>
+        <!-- Copyright & Time-->
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Website Portfolio: created by Tatyana Yarushin
+            </div>
     </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./assets/js/materialize.js"></script>
+    <!-- javascript -->
+    <!-- <script type="text/javascript" src="./assets/js/script.js"></script> -->
 
 </body>
 
