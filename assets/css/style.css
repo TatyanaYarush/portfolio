@@ -29,11 +29,6 @@ h1 {
   color: #4b5063;
 }
 
-/* .Photo {  if posable to do with image?
-  text-shadow: 4px 4px 6px;
-    color:#4b5063;
-} */
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +92,6 @@ a {
   text-decoration: none;
 }
 
-/*move to right side ????*/
 div.row {
   display: flex;
   flex-wrap: wrap;
@@ -148,14 +142,11 @@ p {
   background-image: url("images/image\ background\ 1.png");
   font-size: 25px;
   position: relative;
-  bottom: 60px;
-  left: 70px;
+  bottom: 120px;
+  left: 300px;
   text-align: center;
+  width: 60rem;
 }
-
-/* .background {
-    background-image: url("./images/image background 3.png");
-} */
 
 .card img {
   height: 250px;
@@ -202,7 +193,6 @@ footer {
 }
 
 /* Media Queries */
-
 @media screen and (max-width: 928px) {
   .card {
     flex: 0 0 25%;
