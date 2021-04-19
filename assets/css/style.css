@@ -18,14 +18,15 @@ header {
   background-image: url("images/image\ background\ 2.jpg");
   color: rgb(19, 16, 26);
   display: flex;
+  flex-wrap: wrap;
 }
 
 h1 {
-    order: 2;
-    padding: 85px 0;
-    margin: 0 50px;  
-    text-shadow: 4px 4px 6px;
-    color:#4b5063;
+  order: 2;
+  padding: 85px 0;
+  margin: 0 50px;
+  text-shadow: 4px 4px 6px;
+  color: #4b5063;
 }
 
 /* .Photo {  if posable to do with image?
@@ -40,13 +41,23 @@ main {
 }
 
 nav {
-
   height: 50px;
   padding: 15px;
   background-color: #dbcdc2;
 }
 
-ul li {
+nav ul {
+  display: inline;
+  padding: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: right;
+  line-height: 1;
+  text-shadow: 2px 2px 5px;
+  color: #0e0c0d;
+}
+
+/* ul li {
   display: inline;
   padding: 50px;
   font-size: 20px;
@@ -54,14 +65,18 @@ ul li {
   text-align:right;
   line-height:1;
 
+} */
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 ul li i {
-  margin: 10px;
-  padding: 15px;
+  margin: 2px;
+  padding: 0 10px;
   /* border-radius: 15px;
   text-shadow:#4056b9; */
- 
 }
 
 /* ul li i fa fa-file  { how to move it
@@ -74,6 +89,7 @@ aside {
   text-align: center;
   display: flex;
   font-size: large;
+  width: 100%;
 }
 
 a {
@@ -83,7 +99,7 @@ a {
 
 /*move to right side ????*/
 div.row {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   padding: 5px 0;
   /* float: right; */
@@ -109,34 +125,33 @@ p {
 }
 
 .list-width {
- width: 100%;
-
+  width: 100%;
 }
 
 .list-resume {
- margin-left: 0;
+  margin-left: 0;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width:auto;
+  width: auto;
   padding: 15px;
   order: 6;
-  position: relative; 
+  position: relative;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 2px 2px 4px #3a3838;
 }
 
 #general.card {
-  background-image: url("images/image\ background\ 1.png"); 
+  background-image: url("images/image\ background\ 1.png");
   font-size: 25px;
   position: relative;
   bottom: 60px;
   left: 70px;
   text-align: center;
-} 
+}
 
 /* .background {
     background-image: url("./images/image background 3.png");
@@ -145,7 +160,7 @@ p {
 .card img {
   height: 250px;
   border: 3px solid rgb(31, 28, 28);
-  box-shadow: 5px 5px 5px  #4056b9;
+  box-shadow: 5px 5px 5px #4056b9;
   float: left;
   color: #272323;
 }
@@ -170,83 +185,85 @@ p {
 .span.card-title {
   color: #272323;
   /* font-weight: bold; */
- }
- 
- .card .card-image .card-title {
-   color: rgb(20, 20, 20);
-   font-weight: bold;
-   bottom: 70px;
-   margin-left: 25px;
-   text-align: center;
- }
+}
 
-footer{
+.card .card-image .card-title {
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+  bottom: 70px;
+  margin-left: 25px;
+  text-align: center;
+}
+
+footer {
   line-height: 60px;
   text-align: center;
   background-color: #dbcdc2;
 }
-  
-/* @media screen and (max-width: 928px) {
+
+/* Media Queries */
+
+@media screen and (max-width: 928px) {
   .card {
-      flex: 0 0 25%;
-      
-    }
-  ul li {
-      display: block;
-      text-align: center;
-      padding: 10px;
+    flex: 0 0 25%;
   }
-    header {
-        background: #d4aea9;
-        justify-content: center;
-      }
-      nav {
-    background-color: #ee555d;
-    height:  200px;
-   
-    max-width: 100%;
-      }
-      aside {
-        text-align: center;
-      }
-    }
-  
-/* 
-@media screen and (max-width: 768px) {
-  .card {
-    flex: 0 0 75%;
-    
+  ul li {
+    display: block;
+    text-align: center;
+    padding: 10px;
   }
   header {
-      background: #696464;
+    background: #d4aea9;
+    justify-content: center;
   }
   nav {
-    background-color: #a0759e;
-    
+    background-color: #ee555d;
+    height: 200px;
     max-width: 100%;
   }
   aside {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 75%;
   }
+  header {
+    background: #696464;
+  }
+  nav {
+    background-color: #a0759e;
+
+    max-width: 100%;
+  }
+  aside {
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .card {
     flex: 0 0 100%;
-   
   }
   header {
-      background: #707bad;
-    }
-    nav {
-  background-color: #beccd4;
-  flex: 0 0 100%;
-  max-width: 100%;
-    }
-    aside {
-      width: 100%;
-      text-align: center;
-    }
-/* } */
+    background: #707bad;
+  }
+  nav {
+    background-color: #beccd4;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+}
 
-
+@media only screen and (min-width: 1000px) {
+  .card-title {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+}
